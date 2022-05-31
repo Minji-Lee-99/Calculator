@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ming's calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="calculator.js">
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="4"><input type='text'  class='text' id='formula' value=''></td>
+      </tr>
+      <tr >
+        <td colspan="4"><input type='text' class='text' id='result' value=''></td>
+      </tr>
+      <tr>
+        <td colspan="3"><input type="button" value='AC' onclick="reset()"></td>
+        <td><input type='button'  class='point' value='/' onclick="make_formula(this)"></td>
+      </tr>
+      <tr>
+        <td><input type='button' value='7' onclick="make_formula(this)"></td>
+        <td><input type='button' value='8' onclick="make_formula(this)"></td>
+        <td><input type='button' value='9' onclick="make_formula(this)"></td>
+        <td><input type='button'  class='point' value='*' onclick="make_formula(this)"></td>
+      </tr>
+      <tr>
+        <td><input type='button' value='4' onclick="make_formula(this)"></td>
+        <td><input type='button' value='5' onclick="make_formula(this)"></td>
+        <td><input type='button' value='6' onclick="make_formula(this)"></td>
+        <td><input type='button'  class='point' value='-' onclick="make_formula(this)"></td>
+      </tr>
+      <tr>
+        <td><input type='button' value='1' onclick="make_formula(this)"></td>
+        <td><input type='button' value='2' onclick="make_formula(this)"></td>
+        <td><input type='button' value='3' onclick="make_formula(this)"></td>
+        <td><input type='button'  class='point' value='+' onclick="make_formula(this)"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type='button' value='0' onclick="make_formula(this)"></td>
+        <td><input type='button' value='.' onclick="make_formula(this)"></td>
+        <td><input type='button'  class='point' value='=' onclick="result()"></td>
+      </tr>
+    </table>
+  </body>
+</html>
